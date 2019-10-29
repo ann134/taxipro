@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ru.sigmadigital.taxipro.view.StatisticView
+        android:id="@+id/sv_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineLightGray" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_pay_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector_blackout"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imv_round"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bt_oval_yellow"
+            android:backgroundTint="@color/bottomBarButtonGreen"
+            android:padding="16dp"
+            android:src="@drawable/ic_card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Пополнить картой"
+            android:textColor="@color/textGrayDark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/imv_round"
+            app:layout_constraintLeft_toRightOf="@id/imv_round"
+            app:layout_constraintTop_toTopOf="@id/imv_round"
+            app:layout_constraintVertical_bias="0.26" />
+
+        <TextView
+            android:id="@+id/tv_disc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visa, Mastercard"
+            android:textColor="@color/textGrayLight"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_action"
+            app:layout_constraintTop_toBottomOf="@id/tv_action" />
+
+        <ImageView
+            android:id="@+id/imv_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_arrow_right"
+            app:layout_constraintBottom_toBottomOf="@id/imv_round"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imv_round" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineLightGray" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_terminals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector_blackout"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imv_round2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bt_oval_yellow"
+            android:backgroundTint="@color/areaDarkRed"
+            android:padding="16dp"
+            android:src="@drawable/ic_atm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_action2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Перевод на киви"
+            android:textColor="@color/textGrayDark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/imv_round2"
+            app:layout_constraintLeft_toRightOf="@id/imv_round2"
+            app:layout_constraintTop_toTopOf="@id/imv_round2"
+            app:layout_constraintVertical_bias="0.26" />
+
+        <TextView
+            android:id="@+id/tv_disc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Адреса"
+            android:textColor="@color/textGrayLight"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_action2"
+            app:layout_constraintTop_toBottomOf="@id/tv_action2" />
+
+        <ImageView
+            android:id="@+id/imv_close2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_arrow_right"
+            app:layout_constraintBottom_toBottomOf="@id/imv_round2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imv_round2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineLightGray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="ОПЕРАЦИИ"
+        android:textColor="@color/textGrayLight" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineLightGray" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:textColor="@color/textGrayLight"
+        android:layout_gravity="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_operations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>

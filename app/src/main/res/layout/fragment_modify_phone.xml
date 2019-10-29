@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_0">
+
+    <!--<TextView
+        android:id="@+id/text_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/code_will_send"
+        android:textAlignment="center"
+        android:textColor="@color/textGrayLight"
+        android:textSize="16sp"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toTopOf="@id/phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<ImageView
+        android:id="@+id/logo"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@id/phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/black_transparent50"
+        android:padding="10dp"
+        android:src="@drawable/flag_ru"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/region"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/black_transparent50"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/textGrayLight"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/flag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ru.sigmadigital.maskededittext.MaskedEditText
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:background="@color/black_transparent50"
+        android:digits="0987654321"
+        android:gravity="center_vertical"
+        android:inputType="phone"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/region"
+        app:layout_constraintLeft_toRightOf="@id/region"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/region"
+        app:mask="*** *** ** **"
+        app:notMaskedSymbol="*" />
+
+   <!-- <TextView
+        android:id="@+id/text_accept"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/licence"
+        android:textAlignment="center"
+        android:textColor="@color/textGrayLight"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/enter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone" />-->
+
+    <FrameLayout
+        android:id="@+id/regions_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+<!--    <Button
+        android:id="@+id/enter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bt_oval_yellow"
+        android:text="@string/enter"
+        android:textAllCaps="false"
+        android:textColor="@color/buttonTextGray"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@id/registr" />
+
+    <Button
+        android:id="@+id/registr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bt_oval_traspr"
+        android:text="@string/registration"
+        android:textAllCaps="false"
+        android:textColor="@color/buttonTextGray"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent" />-->
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ДАЛЕЕ"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/buttonTextGray"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/line_up"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:background="@color/grayBackground"
+
+        app:layout_constraintBottom_toTopOf="@id/ring"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/ring"
+        app:layout_constraintRight_toRightOf="@id/ring" />
+
+    <View
+        android:id="@+id/ring"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+
+        android:background="@drawable/ic_circle_12"
+        android:backgroundTint="@color/grayBackground"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/address"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/line_down"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:background="@color/grayBackground"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ring"
+        app:layout_constraintLeft_toLeftOf="@id/ring"
+        app:layout_constraintRight_toRightOf="@id/ring" />
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+
+        android:maxLines="1"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="Проспект проспектов, 26"
+
+        app:layout_constraintLeft_toRightOf="@id/ring"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+
+        android:maxLines="1"
+        android:textSize="13sp"
+        android:textColor="@color/textGrayLight"
+        android:text="Крутой район"
+
+        app:layout_constraintLeft_toLeftOf="@id/address"
+        app:layout_constraintTop_toBottomOf="@id/address"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

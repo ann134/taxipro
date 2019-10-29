@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#262932</color>
+    <color name="colorAccent">#f9c34a</color>
+
+    //bg
+    <color name="grayBackground">#262932</color>
+    <color name="barsBackground">#3a3d46</color>
+    <color name="bottomBarTransparent">#B3202124</color>
+
+    //text
+    <color name="textGrayLight">#a0a5b9</color>
+    <color name="textGrayDark">#3a3d45</color>
+    <color name="textLightRed">#e99b9b</color>
+    <color name="textRed">#f64142</color>
+
+    //button
+    <color name="buttonTextGray">#353840</color>
+    <color name="lightButton">#C6CBD3</color>
+    <color name="buttonTransparent">#80FFFFFF</color>
+    <color name="buttonTransparentPressed">#803A3D45</color>
+
+    //line
+    <color name="lineYellow">#888c89</color>
+    <color name="lineLightGray">#f5f6f8</color>
+
+
+    //colors
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_transparent50">#80000000</color>
+    <color name="black_transparent20">#33000000</color>
+
+    // nav bar main
+    <color name="navBarInactive">#9da2b3</color>
+
+    //slidind up panel
+    <color name="headOfDrawer">#ebeff0</color>
+    <color name="greenIndicator">#7fd300</color>
+
+    //areas
+    <color name="areaWhite">#f1f2f6</color>
+    <color name="areaRed">#e35c59</color>
+    <color name="areaYellow">@color/colorAccent</color>
+    <color name="areaDarkRed">#993f65</color>
+
+    //bottom bar order
+    <color name="bottomBarButtonGreen">#4caf76</color>
+    <color name="bottomBarButtonRed">#f5605c</color>
+    <color name="bottomBarButtonGray">#47586a</color>
+    <color name="bottomBarButtonOrange">#f6754e</color>
+    <color name="bottomBarTimerBlue">#5279bc</color>
+
+
+
+
+
+
+
+
+    <!--<color name="textGrayMiddle">#6b6d7c</color>
+    <color name="grayBackgroundTrans">#76262932</color>
+    <color name="black_transparent50">#80000000</color>
+    <color name="menu_overlay">#F21C1C1D</color>
+    <color name="overlay50">#803A3D45</color>
+    <color name="overlay90">#E8282A30</color>
+    <color name="red">#CC2932</color>
+    <color name="green">#3F7907</color>
+    <color name="navBarActive">#f8c355</color>
+    <color name="navBarInactive">#a2a9bb</color>
+    <color name="splash_overlay">#991C1C1D</color-->
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/img_order"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заказ"
+        android:textColor="@color/textGrayDark"
+        android:textSize="13sp"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintLeft_toRightOf="@id/img_order"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Киевская ул., 25"
+        android:textColor="@color/textGrayDark"
+        android:textSize="18sp"
+
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="В пути"
+        android:textColor="@color/textGrayDark"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/tv_address"
+        app:layout_constraintTop_toBottomOf="@id/tv_address" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

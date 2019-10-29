@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ru.sigmadigital.taxipro.view.StatisticView
+            android:id="@+id/call_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineLightGray" />
+
+        <ru.sigmadigital.taxipro.view.StatisticView
+            android:id="@+id/car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineLightGray" />
+
+        <ru.sigmadigital.taxipro.view.StatisticView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineLightGray" />
+
+       <!-- <ru.sigmadigital.taxipro.view.TextWithIconView
+            android:id="@+id/messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+        <ru.sigmadigital.taxipro.view.TextWithIconView
+            android:id="@+id/news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--<ru.sigmadigital.taxipro.view.TextWithIconView
+            android:id="@+id/chats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+        <ru.sigmadigital.taxipro.view.TextWithIconView
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ru.sigmadigital.taxipro.view.TextWithIconView
+            android:id="@+id/instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ru.sigmadigital.taxipro.view.TextWithIconView
+            android:id="@+id/user_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lineLightGray" />
+
+        <Button
+            android:id="@+id/sos"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bt_oval_yellow"
+            android:text="SOS"
+            android:textAllCaps="false"
+            android:textColor="@color/buttonTextGray"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bt_oval_yellow"
+            android:text="Выход"
+            android:textAllCaps="false"
+            android:textColor="@color/buttonTextGray"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

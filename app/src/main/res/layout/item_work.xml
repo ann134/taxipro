@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imv_round"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_circle_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_hours_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="89"
+        android:textColor="@color/textGrayDark"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/imv_round"
+        app:layout_constraintLeft_toLeftOf="@id/imv_round"
+        app:layout_constraintRight_toRightOf="@id/imv_round"
+        app:layout_constraintTop_toTopOf="@id/imv_round" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="fjdtcjyctyj"
+        android:textColor="@color/textGrayDark"
+        android:textSize="16sp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/tv_status"
+        app:layout_constraintLeft_toRightOf="@id/imv_round"
+        app:layout_constraintTop_toTopOf="@id/imv_round" />
+
+    <View
+        android:id="@+id/dash"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="4dp"
+        android:background="@color/textGrayLight"
+        app:layout_constraintBottom_toBottomOf="@id/tv_cost"
+        app:layout_constraintLeft_toRightOf="@id/tv_time"
+        app:layout_constraintTop_toTopOf="@id/tv_cost" />
+
+    <TextView
+        android:id="@+id/tv_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:text="1r67567"
+        android:textColor="@color/textGrayLight"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toBottomOf="@id/tv_time"
+        app:layout_constraintLeft_toRightOf="@id/dash"
+        app:layout_constraintTop_toTopOf="@id/tv_time" />
+
+     <TextView
+         android:id="@+id/tv_status"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="@color/textGrayLight"
+         android:text="657567"
+         app:layout_constraintLeft_toLeftOf="@id/tv_time"
+         app:layout_constraintTop_toBottomOf="@id/tv_time"
+         app:layout_constraintBottom_toBottomOf="@id/imv_round" />
+
+    <ImageView
+        android:id="@+id/imv_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_delete_oval"
+        app:layout_constraintBottom_toBottomOf="@id/imv_round"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imv_round" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

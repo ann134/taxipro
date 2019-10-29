@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_inset_transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Заказ выполнен!"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textGrayDark"
+                    android:textSize="18sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/lineLightGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title" />
+
+                <ImageView
+                    android:id="@+id/distance_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_map"
+                    app:layout_constraintBottom_toBottomOf="@id/distance"
+                    app:layout_constraintRight_toLeftOf="@id/distance"
+                    app:layout_constraintTop_toTopOf="@id/distance" />
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="6,3 km"
+                    android:textColor="@color/textGrayDark"
+                    android:textSize="20sp"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/time"
+                    app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="00;23;17"
+                    android:textColor="@color/textGrayDark"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/distance"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/lineLightGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/distance" />
+
+                <TextView
+                    android:id="@+id/amount_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Сумма поездки"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textGrayDark"
+                    android:textSize="18sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line2" />
+
+                <ImageView
+                    android:id="@+id/amount_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bt_oval_yellow"
+                    android:backgroundTint="@color/colorAccent"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_bank_card"
+                    android:tint="@color/grayBackground"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/amount"
+                    app:layout_constraintTop_toBottomOf="@id/amount_title" />
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="350p"
+                    android:textAlignment="center"
+                    android:textColor="@color/textGrayDark"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/amount_icon"
+                    app:layout_constraintLeft_toRightOf="@id/amount_icon"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/amount_icon" />
+
+                <TextView
+                    android:id="@+id/payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="40dp"
+                    android:text="Оплата картой"
+                    android:textAlignment="center"
+                    android:textColor="@color/textGrayLight"
+                    android:textSize="18sp"
+                    app:layout_constraintLeft_toLeftOf="@id/amount_icon"
+                    app:layout_constraintRight_toRightOf="@id/amount"
+                    app:layout_constraintTop_toBottomOf="@+id/amount_icon" />
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/lineLightGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/payment" />
+
+                <TextView
+                    android:id="@+id/rate_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Оценка заказа"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textGrayDark"
+                    android:textSize="18sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line3" />
+
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_star"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/star2"
+                    app:layout_constraintTop_toBottomOf="@id/rate_title" />
+
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_star"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintLeft_toRightOf="@id/star1"
+                    app:layout_constraintRight_toLeftOf="@id/star3"
+                    app:layout_constraintTop_toBottomOf="@id/rate_title" />
+
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_star"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintLeft_toRightOf="@id/star2"
+                    app:layout_constraintRight_toLeftOf="@id/star4"
+                    app:layout_constraintTop_toBottomOf="@id/rate_title" />
+
+                <ImageView
+                    android:id="@+id/star4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_star"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintLeft_toRightOf="@id/star3"
+                    app:layout_constraintRight_toLeftOf="@id/star5"
+                    app:layout_constraintTop_toBottomOf="@id/rate_title" />
+
+                <ImageView
+                    android:id="@+id/star5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_star"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintLeft_toRightOf="@id/star4"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rate_title" />
+
+                <Button
+                    android:id="@+id/rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/colorAccent"
+                    android:text="оценить заказ"
+                    android:textAllCaps="true"
+                    android:textColor="@color/buttonTextGray"
+                    app:layout_constraintTop_toBottomOf="@id/star1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/transparent"
+            android:text="@string/close"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintTop_toBottomOf="@id/text" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

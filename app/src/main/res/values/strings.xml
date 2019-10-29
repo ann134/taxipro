@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">TaxiPro</string>
+
+
+    <!--login fragment-->
+    <string name="licence">Нажимая кнопку «Войти» или «Зарегестрироваться», вы автоматически принимаете пользовательское соглашение.</string>
+    <string name="code_will_send">На указанный номер будет отправлен код подтверждения</string>
+    <string name="enter">Вход</string>
+    <string name="registration">Регистрация</string>
+
+    <!--code fragment-->
+    <string name="code_phone">Код подтверждения</string>
+    <string name="code_was_send">Код подтверждения был отправлен на номер %s.</string>
+    <string name="send_again">Отправить еще раз</string>
+
+
+
+    <!--registration-->
+    <string name="reg_step1_title">Чтобы получать заказы добавте фото Ваших документов:</string>
+    <string name="reg_ts_front">Свидетельство о регистрации ТС (лицевая сторона)</string>
+    <string name="reg_ts_back">Свидетельство о регистрации ТС (обратная сторона)</string>
+    <string name="driver_license_front">Фото водительского удостоверения (лицевая сторона)</string>
+    <string name="driver_license_back">Фото водительского удостоверения (обратная сторона)</string>
+
+    <string name="reg_step2_title">Добавте фотографии Вашего автомобиля:</string>
+    <string name="car_front">Фото автомобиля (спереди)</string>
+    <string name="car_back">Фото автомобиля (сзади)</string>
+    <string name="interior_of_car">Фото салона автомобиля</string>
+    <string name="extra_info">Дополнительно (необязательно)</string>
+    <string name="next">ДАЛЕЕ</string>
+
+    <string name="agreement">Нажимая на кнопку «Отправить заявку», Вы автоматически принимаете пользовательское соглашение.</string>
+    <string-array name="cities_for_choose">
+        <item>Санкт-Петербург</item>
+        <item>Москва</item>
+        <item>Уфа</item>
+        <item>Пермь</item>
+        <item>Мурманск</item>
+        <item>Калуга</item>
+        <item>Кировск</item>
+        <item>Бугры</item>
+        <item>Хельсинки</item>
+        <item>Новгород</item>
+        <item>Донбас</item>
+        <item>Киев</item>
+        <item>Астана</item>
+        <item>Юрмала</item>
+        <item>Грозный</item>
+    </string-array>
+    <string name="title_send">Заявка отправлена!</string>
+    <string name="mess_send">По окончанию регистрации Вы получите уведомление и сможете принимать заказы.</string>
+
+
+
+
+
+    <!--training-->
+    <string name="training_tit1">Вход</string>
+    <string name="training_tit2">Смена</string>
+    <string name="training_tit3">Баланс</string>
+    <string name="training_tit4">Прием заказов</string>
+    <string name="training_tit5">Берите заявку и зарабатывайте!</string>
+    <string name="training_text1">Пройдите регистрацию или авторизуйтесь</string>
+    <string name="training_text2">Выйдите на смену</string>
+    <string name="training_text3">Пополните баланс или выполните безналичный перевод</string>
+    <string name="training_text4">Включите робота или выбирайте заказы из списка</string>
+    <string name="training_button1">начать</string>
+    <string name="skip">ПРОПУСТИТЬ</string>
+
+
+    <!--income-->
+    <string-array name="weeks_for_choose">
+        <item>18 - 24 февраля</item>
+        <item>25 февраля - 3 марта </item>
+        <item>4 - 10 марта</item>
+        <item>11 - 10 марта</item>
+        <item>18 - 24 февраля</item>
+        <item>25 февраля - 3 марта </item>
+        <item>4 - 10 марта</item>
+        <item>11 - 10 марта</item>
+        <item>18 - 24 февраля</item>
+        <item>25 февраля - 3 марта </item>
+        <item>4 - 10 марта</item>
+        <item>11 - 10 марта</item>
+    </string-array>
+
+
+
+    <!--==================================== dialogs ================================================-->
+    <!--dialog-->
+    <string name="close">Закрыть</string>
+    <string name="select_button">Выбрать</string>
+    <string name="cancell">Отмена</string>
+
+    <!--dialog error wrong number-->
+    <string name="error">Ошибка</string>
+    <string name="text_error_number">Нам не удалось найти Ваш номер в базе, проверьте правильно ли вы его указали \n\n
+        Если Вы еще не зарегестрированы, то можете сделать это прямо сейчас</string>
+    <string name="registr_s">Зарегестрироваться</string>
+    <string name="ok">OK</string>
+
+    <!--dialog error  wrong code-->
+    <string name="code_error">Код подтверждения неверный. Попробуйте еще раз.</string>
+
+    <!--dialog number-->
+    <string name="confirm_number">Подтвердите номер</string>
+    <string name="yours_number">Это ваш номер телефона? %s</string>
+    <string name="change">Изменить</string>
+    <string name="my_number">Да, это мой номер</string>
+
+    <!--dialog status address-->
+    <string name="no_adress">Адрес не указан</string>
+    <string name="no_adress_descr">Укажите домашний адрес чтобы мы смогли проложить маршрут</string>
+
+    <!--==================================== x  dialogs  x ===========================================-->
+
+
+
+    <!--bottom navigation -->
+    <string name="main">ГЛАВНАЯ</string>
+    <string name="revenue">ДОХОДЫ</string>
+    <string name="activity">АКТИВНОСТЬ</string>
+    <string name="account">АККАУНТ</string>
+
+    <!--status -->
+    <string name="status_on_select">выйти в сеть</string>
+    <string name="status_home_select">домой</string>
+    <string name="status_off_select">уйти из сети</string>
+    <string name="status_on">в сети</string>
+    <string name="status_home">домой</string>
+    <string name="status_off">не в сети</string>
+    <string name="serviseRun">Запущено</string>
+    <string name="error_connection_toast">Нет соединения с сервером</string>
+
+
+</resources>

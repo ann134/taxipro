@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="30dp"
+    android:paddingTop="15dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:id="@+id/icon_payment"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bt_oval_yellow"
+        android:backgroundTint="@color/colorAccent"
+        android:padding="10dp"
+        android:tint="@color/grayBackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/textGrayLight"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@id/icon_payment"
+        app:layout_constraintLeft_toRightOf="@id/icon_payment"
+        app:layout_constraintRight_toLeftOf="@id/amount"
+        app:layout_constraintTop_toTopOf="@id/icon_payment" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/icon_payment"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/icon_payment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

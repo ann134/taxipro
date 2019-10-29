@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "ru.sigmadigital.taxipro"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+//        ndk {
+//            abiFilters "armeabi", "armeabi-v7a","armeabi-v8l", "x86", "mips"
+//        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+//    splits { abi { enable false } }
+}
+
+dependencies {
+    //    implementation fileTree(include: ['*.jar', '*.so'], dir: 'libs')
+    implementation fileTree(include: ['*.jar', '*.so'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    //masked text
+    implementation project(':maskededittext')
+    //WheelPicker
+    implementation 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+    //bottom nav
+    implementation 'com.aurelhubert:ahbottomnavigation:2.3.4'
+    //chips
+    implementation 'com.github.adroitandroid:ChipCloud:2.2.1'
+    //photo
+    implementation 'com.github.jrvansuita:PickImage:2.2.4'
+    //sliding up panel
+    implementation 'com.sothree.slidinguppanel:library:3.4.0'
+    //live data
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+    //charts
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    //maps
+    implementation 'org.osmdroid:osmdroid-android:6.0.3'
+    //sockets
+    implementation 'org.java-websocket:Java-WebSocket:1.4.0'
+    //gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.google.android.material:material:1.0.0'
+    //true time
+    //implementation 'com.github.instacart.truetime-android:library-extension-rx:3.4'
+    //uber hexagon
+//    implementation 'com.uber:h3:3.4.0'
+
+}
+
